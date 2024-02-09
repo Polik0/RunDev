@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>RunRoot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+    /* ==========================================================================
+Google Fonts
+========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+/* ==========================================================================
+clearfix
+========================================================================== */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+
+.cf:after {
+  clear: both;
+}
+
+
+.cf {
+  zoom: 1;
+}
+
+
+/* ==========================================================================
+html, body and stuff
+========================================================================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 100%;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #f3f3f3;
+}
+
+
+/* ==========================================================================
+text
+========================================================================== */
+.left {
+  text-align: left;
+}
+
+
+.center {
+  text-align: center;
+}
+
+
+.right {
+  text-align: right;
+}
+
+
+.justify {
+  text-align: justify;
+}
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+padding / margin
+========================================================================== */
+.padding1rem {
+  padding: 1rem;
+}
+
+
+.paddingRight2rem {
+  padding: 0 2rem 0 0;
+}
+
+
+/* ==========================================================================
+links
+========================================================================== */
+a {
+  color: white;
+}
+
+
+/* ==========================================================================
+headlines
+========================================================================== */
+/* ==========================================================================
+awesome Fonts
+========================================================================== */
+i {
+  color: #d1d4d9;
+  margin: 0 1rem 0 0;
+}
+
+
+/* ==========================================================================
+layout
+========================================================================== */
+
+
+
+
+
+.container {
+  width: 900px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.container .subtitle {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.services {
+  width: 100%;
+  background: url(zemekoule.jpg);
+
+}
+
+.services h2 {
+  color: #000000;
+  margin-top: 120px;
+}
+
+.services .serv-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .services .serv-list {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.services .serv-item {
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .services .serv-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.services .serv-img {
+  display: inline-block;
+  border: 3px solid #fed136;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.services .serv-img img {
+  height: 40px;
+  width: 45px;
+}
+
+.contact {
+  background: url("../map.png") right bottom/auto no-repeat;
+  background-color: #222;
+  padding: 110px 0 115px;
+  height: 100%;
+}
+
+.contact h2 {
+  color: #fff;
+  margin-top: 10px;
+}
+
+form {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 75px;
+}
+
+form .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+form .flex-column {
+  width: 50%;
+}
+
+form .flex-column:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+form .flex-column input,
+form .flex-column textarea {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  border-radius: 5px;
+}
+
+form .flex-column input::-webkit-input-placeholder,
+form .flex-column textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #bbb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+form .flex-column input:-ms-input-placeholder,
+form .flex-column textarea:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #bbb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+form .flex-column input::-ms-input-placeholder,
+form .flex-column textarea::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #bbb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+form .flex-column input::placeholder,
+form .flex-column textarea::placeholder {
+  font-size: 1rem;
+  color: #bbb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+form .flex-column textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+form input[type="submit"] {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background-color: #fed136;
+  height: 70px;
+  width: 250px;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #1d1c1c;
+}
+ 
+ 
+body{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+    </style>
+</head>
+<body>
+   <header>
+    
+    </header>
+   <main>
+    <section class="services">
+      <div class="container">
+          
+       </div>
+  </section>
+  <section class="contact">
+     <div class="container">
+          <h2>create your account</h2>
+          <form action="">
+              <div class="flex-row">
+                  <div class="flex-column">
+                      <input type="text" placeholder="Your name *" required>
+                      <input type="email" name="" id="" placeholder="Your e-mail *" required>
+                      <input type="text" placeholder="subject">
+                  </div>
+                  <div class="flex-column">
+                      <textarea name="" id="" placeholder="Your message *" required></textarea>
+                  </div>
+              </div>
+              <input type="submit" value="Create">
+          </form>    
+   </section>
+   </main>
+</body>
+</html>
