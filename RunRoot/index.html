@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
@@ -6,19 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <style>
-    /* ==========================================================================
-Google Fonts
-========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
-/* ==========================================================================
-clearfix
-========================================================================== */
+
 .cf:before,
 .cf:after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 
 
@@ -31,10 +25,6 @@ clearfix
   zoom: 1;
 }
 
-
-/* ==========================================================================
-html, body and stuff
-========================================================================== */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -48,10 +38,6 @@ body {
   background-color: #f3f3f3;
 }
 
-
-/* ==========================================================================
-text
-========================================================================== */
 .left {
   text-align: left;
 }
@@ -76,10 +62,6 @@ text
   text-transform: uppercase;
 }
 
-
-/* ==========================================================================
-padding / margin
-========================================================================== */
 .padding1rem {
   padding: 1rem;
 }
@@ -89,30 +71,14 @@ padding / margin
   padding: 0 2rem 0 0;
 }
 
-
-/* ==========================================================================
-links
-========================================================================== */
 a {
   color: white;
 }
 
-
-/* ==========================================================================
-headlines
-========================================================================== */
-/* ==========================================================================
-awesome Fonts
-========================================================================== */
 i {
   color: #d1d4d9;
   margin: 0 1rem 0 0;
 }
-
-
-/* ==========================================================================
-layout
-========================================================================== */
 
 header {
 
@@ -126,6 +92,7 @@ header {
   border: 1px solid grey;
   display: flex;
   justify-content: space-between;
+  opacity: 0.5;
 }
 
 
@@ -428,7 +395,7 @@ form .flex-column textarea:-ms-input-placeholder {
 form .flex-column input::-ms-input-placeholder,
 form .flex-column textarea::-ms-input-placeholder {
   font-size: 1rem;
-  color: #bbb;
+  color: #e4e4e4;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -436,7 +403,7 @@ form .flex-column textarea::-ms-input-placeholder {
 form .flex-column input::placeholder,
 form .flex-column textarea::placeholder {
   font-size: 1rem;
-  color: #bbb;
+  color: #e4e4e4;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -467,17 +434,59 @@ body {
  
  
 body{
-    
+    background: url("pozadi.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
+main {
+  margin: 0 auto;
+  height: 70%;
+  margin-top: -10rem;
+  text-align: center;
+}
+
+        .flex-container {
+          margin: 0 auto;
+        width: 70%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(30, 143, 255, 0);
+}
+
+.title {
+  line-height: 1.5;
+  top: 0;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 1rem;
+  width: 20rem;
+  font-size: 20px;
+  opacity: 0.8;
+  border-radius: 1rem;
+}
+
+
+.number{
+    opacity: 0.1;
+    font-size: 130px;
+    display: block;
+    line-height: 120px;
+    position: relative;
+    bottom: 120px;
+}
     </style>
 </head>
 <body>
-  <h1>...</h1>
-
    <header>
     <div class="bar">
         <label class="floatLeft" for="navBtn"><span></span></label>
@@ -489,44 +498,32 @@ body{
         <nav>
             <ul>
                 <li>
-                    <a href="tabulka.html"><i class="fa fa-table"></i>Tabulka</a>
+                    <a href="tabulka.html"><i class="fa fa-table"></i>Table</a>
                 </li>
                 <li>
-                    <a href="aktivita.html"><i class="fa fa-heart" ></i>Aktivita</a>
+                    <a href="aktivita + calendar.html"><i class="fa fa-heart" ></i>Events</a>
                 </li>
                 <li>
-                    <a href="skupina.html"><i class="fa fa-users"></i>Skupina</a>
+                    <a href="skupina.html"><i class="fa fa-users"></i>Group</a>
                 </li>
                 <li>
-                    <a href="muj-profil.html"><i class="fa fa-user"></i>Můj profil</a>
+                    <a href="muj-profil.html"><i class="fa fa-user"></i>My profile</a>
+                </li>
+                <li>
+                    <a href="log in.html"><i class="fa fa-user"></i>Log in</a>
                 </li>
             </ul>
         </nav>
     </header>
    <main>
-    <section class="services">
-      <div class="container">
-          
-       </div>
-  </section>
-  <section class="contact">
-     <div class="container">
-          <h2>create your account</h2>
-          <form action="">
-              <div class="flex-row">
-                  <div class="flex-column">
-                      <input type="text" placeholder="Your name *" required>
-                      <input type="email" name="" id="" placeholder="Your e-mail *" required>
-                      <input type="text" placeholder="subject">
-                  </div>
-                  <div class="flex-column">
-                      <textarea name="" id="" placeholder="Your message *" required></textarea>
-                  </div>
-              </div>
-              <input type="submit" value="Create">
-          </form>    
-   </section>
+    <h1 class="title">about us</h1>
+    <div class="flex-container">
+        <div>
+        <p>New challenges await you every<br>day. They are categorised by<br>difficulty and you can choose<br>which one you feel like doing.<br>You get XP for completing<br> the different challenges. XP is <br>used to give you higher<br>levels for which you get<br> bonus points, thanks to which<br> you are on the leaderboard.</p>
+      </div>
+        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore placeat amet sit voluptatum nemo pariatur!</p></div>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, earum!</p></div>  
+      </div>      
    </main>
-   <footer></footer>
 </body>
 </html>
