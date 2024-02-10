@@ -484,6 +484,47 @@ main {
     position: relative;
     bottom: 120px;
 }
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-top: 100px;
+    margin-left: 750px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    top: 50px;    
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.nadpis-tabulky{  
+    text-align: center;
+    margin-top: 150px;
+}
+ 
     </style>
 </head>
 <body>
@@ -523,7 +564,59 @@ main {
       </div>
         <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore placeat amet sit voluptatum nemo pariatur!</p></div>
         <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, earum!</p></div>  
-      </div>      
+      </div>  
+      <h1 class="nadpis-tabulky">Table of the 10 best employees</h1>
+    <table class="styled-table">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Points</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr  class="active-row">
+              <td>Joelle</td>
+              <td>15475</td>
+          </tr>
+          <tr>
+              <td>Rina</td>
+              <td>15047</td>
+          </tr>
+          <tr>
+            <td>Thomas</td>
+            <td>14259</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>12547</td>
+        </tr>
+        <tr>
+          <td>Melissa</td>
+          <td>10269</td>
+      </tr>
+      <tr>
+          <td>Carl</td>
+          <td>10247</td>
+      </tr>
+      <tr>
+        <td>Dom</td>
+        <td>9831</td>
+    </tr>
+    <tr>
+        <td>Faith</td>
+        <td>9478</td>
+    </tr>
+    <tr>
+      <td>Nigel</td>
+      <td>9041</td>
+  </tr>
+  <tr>
+      <td>Karen</td>
+      <td>8897</td>
+  </tr>
+      </tbody>
+  </table>
+       
    </main>
 </body>
 </html>
